@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --color-light: lch(96.19% 0.01 296.81);
+    --color-dark: lch(13.23% 0 296.81);
+    --color-orange: lch(55.92% 66.82 69.25 / 0.8);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.hero
+{
+    height: 100dvh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url(../images/motos/harley-davidson-BwXsi8tcXlk-unsplash.jpg);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .header-hero
+    {
+        h1{
+            color: var(--color-light);
+        }
+    }
+}
+
+section
+{
+    height: 100dvh;
+}
