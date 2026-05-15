@@ -13,6 +13,7 @@
 :root
 {
     --color-orange: lch(55.92% 66.82 69.25 / 0.8);
+    --color-orange-100: lch(62.31% 90.08 52.36 / 0.4);
     --color-light: lch(96.19% 0.01 296.81);
     --color-dark: lch(13.23% 0 296.81);
 
@@ -57,7 +58,7 @@ ul, ol
         .nav-hero-menu
         {
             display: flex;
-            gap: var(--spacing-mds);
+            gap: var(--spacing-md);
         }
     }
 }
@@ -95,6 +96,58 @@ a{
         width: 60%;
         text-wrap: balance;
         line-height: 1.6;
+    }
+}
+
+.btn
+{
+    border: 2px solid var(--color-orange);
+    background-color: var(--color-orange-100);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 100px;
+    transition: .5s;
+
+    &:hover
+    {
+        background-color: transparent;
+    }
+}
+
+.gallery
+{
+    padding: var(--spacing-md);
+    background-color: var(--color-dark);
+    color: var(--color-light);
+
+    h2
+    {
+        margin-bottom: var(--spacing-md);
+        font-size: 6vmin;
+    }
+
+    .grid-motorcycles
+    {
+        columns: 3 300px;
+        
+        img
+        {
+            width: 100%;
+            opacity: .5;
+            border-radius: 8px;
+            position: relative;
+            filter: grayscale(1);
+            margin-block: var(--spacing-sm);
+
+            transition: .5s;
+
+            &:hover
+            {
+                opacity: 1;
+                filter: grayscale(0);
+                scale: 1.1;
+                z-index: 1;
+            }
+        }
     }
 }
 
